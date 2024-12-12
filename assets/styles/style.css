@@ -98,7 +98,7 @@ aside {
  display: block;
 }
 
-.social-media > div > a > img {
+.social-media img {
  width: 20px;
  height: 20px;
  margin-top: 4px;
@@ -337,14 +337,22 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: space-around;
-} .support__container > .powered > .about .dicoding_about, .rog_about {
+} .about .dicoding_about, .rog_about {
   grid-column: span 1 / span 1;
 } .support__container > .author {
   grid-column:span 1 / span 1;
+} .support__container > .author p{
+   padding-bottom: 8px;
 } .author_social-media {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+}
+
+.about .dicoding_about ul, .rog_about ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .copyright__content {
@@ -388,7 +396,13 @@ li, a {
   width: 78%;
  }
  .social-media {
-  width: 25%;
+  width: 40%;
+  margin: 40px 0;
+ } 
+ .social-media img {
+  padding: 0 10px;
+  width: 48px;
+  height: 48px;
  }
  /* Footer */
  .support__container {
@@ -398,6 +412,8 @@ li, a {
   width: 100%;
  } .support__container > .author {
   margin: 32px 0;
+ }  .support__container > .author p {
+  padding: 12px 0;
  }
 }
 
